@@ -1,0 +1,23 @@
+
+.image-container { 
+    background: url(/Users/samk/digitalcrafts/html/html_css_bootcamp/DgtlCrfts/img/atl.png);
+    height: 500px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.logo {
+    
+}
+
+span {
+    color: grey;
+    font-size: 15px;
+    display: inline-block;
+    float: right;
+}
+
+.links {
+    
+}

@@ -1,0 +1,28 @@
+
+.cities {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+span.note {
+    font-size: 120%;
+    color: red;
+  }
+
+  .city {
+    background-color: rgb(255, 71, 209);
+    color: rgb(72, 255, 0);
+    padding: 10px;
+  }
+
+
+.middle, h1 {
+    text-align: center;
+}
+
+.box {
+    color: rgb(7, 185, 255);
+}

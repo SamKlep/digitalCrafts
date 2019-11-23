@@ -1,0 +1,17 @@
+.container-fliud {
+    background-color: yellow;
+    text-align: center;
+}
+
+ul li {
+    color: black;
+    display: inline;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    color: green;
+    
+}
