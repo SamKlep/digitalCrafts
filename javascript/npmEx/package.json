@@ -1,0 +1,22 @@
+{
+  "name": "speed-test",
+  "version": "1.0.0",
+  "description": "test internet connection speed",
+  "main": "index.js",
+  "scripts": {
+    "test": "speedtest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamKlep/DC-Flex.git"
+  },
+  "author": "Samuel Klepper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamKlep/DC-Flex/issues"
+  },
+  "homepage": "https://github.com/SamKlep/DC-Flex#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

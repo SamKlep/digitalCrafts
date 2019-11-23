@@ -1,0 +1,16 @@
+#!/bin/bash
+
+      mkdir digitalcrafts
+      mkdir projects
+      mkdir CLI101
+      touch hello.txt
+      mkdir mysite
+      touch index.html
+      mkdir files
+      touch question1.txt
+      touch question2.txt
+      touch question3.md
+      touch sam.info
+      touch remove-me-1.txt
+      touch remove-me-2.txt
+      
