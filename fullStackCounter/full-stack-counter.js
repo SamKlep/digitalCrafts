@@ -1,7 +1,11 @@
 const express = require("express");
 const serverApp = express();
+const axios = require('axios');
 
 let counter = 0;
+
+serverApp.use(express.static(__dirname + '/public'));
+
 
 serverApp.post("/increment", function(request, response) {
     counter++;
