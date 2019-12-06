@@ -1,26 +1,31 @@
 const express = require("express");
-const serverApp = express();
-const axios = require('axios');
+const app = express();
 
 let counter = 0;
 
-serverApp.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 
-serverApp.post("/increment", function(request, response) {
-    counter++;
-    response.send(counter.toString());
+app.get("/value", function (req, response){
+  response.send(counter.toString());
 });
 
-serverApp.post("/decrement", function(request, response) {
-    counter--;
-    response.send(counter.toString());
+app.get("/increment", function (req, response){
+  counter++;
+  response.send(counter.toString());
 });
 
-serverApp.get("/value", function(request, response) {
-    response.send(counter.toString());
+app.get("/reset", function (req, response){
+  counter = 0;
+  response.send(counter.toString());
 });
 
-serverApp.listen(3000, function() {
-    console.log("My Server is listening on port 3000!");
+
+app.get("/decrease", function (req, response){
+  counter--;
+  response.send(counter.toString());
+});
+
+app.listen(3000, function(){
+  console.log("server listening on post 3000");
 });
