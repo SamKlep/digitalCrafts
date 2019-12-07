@@ -7,16 +7,17 @@ $(document).ready(function(){
         $('#todo_items_list').html(renderTodo(data));
       });
     }
-  
+
     function renderTodo(data) {
       let html = '<ol>';
       data.forEach(element => {
-        html += `<li>${element.todo}</li>`;
+        html += `<li>${element.todo}<button class="delete-todo" data-todoId="${element.id}">Delete Todo</button></li>`;
+
       });
       html += '</ol>';
       return html;
     }
-  
+
     $('#addTodo').click(function(){
       let text = $('#new_todo').val();
   
@@ -24,7 +25,7 @@ $(document).ready(function(){
         alert('Please add a todo text');
         return;
       }
-  
+      
       text = text.split('\n');
       text.forEach(el => {
         $.post('/api/todos', { 'todo': el });
@@ -34,3 +35,9 @@ $(document).ready(function(){
       
     });
   });
+  
+  function deleteButton(id){
+    console.log(id);
+  }
+
+  
