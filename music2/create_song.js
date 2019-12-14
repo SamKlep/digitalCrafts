@@ -27,8 +27,8 @@ const db = pgp(config);
     //console.log(result);
   //});
 
-  db.result("INSERT INTO albums \
-  VALUES (2, 'The Squeezed Apple', 1998, 'Epic','Grunge', 4)")
+  db.result("INSERT INTO songs \
+  VALUES (13, 'I like crunchy soft', '5:33', 2, 9)")
   .then(function (result) {
     console.log(result);
   });
