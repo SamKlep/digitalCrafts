@@ -19,18 +19,18 @@ const pgp = require('pg-promise')(initOptions);
 // Create the database instance:
 const db = pgp(config);
 
-//var biz = {name: "The Squeezed Apple"}; 
-//var q = "INSERT INTO albums \
-  //VALUES (default, ${name})";
-//db.result(q, biz)
-  //.then(function (result) {
-    //console.log(result);
-  //});
-
-  db.result("INSERT INTO artists \
-  VALUES (5, 'Fruit Evanglists')")
+var biz = {name: "Fruit Evanglists"}; 
+var q = "INSERT INTO artists \
+  VALUES (5, ${name})";
+db.result(q, biz)
   .then(function (result) {
     console.log(result);
   });
+
+  //db.result("INSERT INTO artists \
+  //VALUES (5, 'Fruit Evanglists')")
+  //.then(function (result) {
+    //console.log(result);
+  //});
 
   pgp.end();
