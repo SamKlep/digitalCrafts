@@ -34,6 +34,7 @@ $(function () {
             url: '/api/orders',
             data: order,
             success: function(newOrder) {
+                console.log(newOrder)
                 addOrder(newOrder);
             },
             error: function() {

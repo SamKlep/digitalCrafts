@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/SamKlep/coffeeApp#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "bluebird": "^3.7.2",
+    "express": "^4.17.1",
+    "pg-promise": "^10.3.1"
   }
 }
