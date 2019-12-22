@@ -17,6 +17,10 @@ app.use(function (request, response, next) {
   next();
 });
 
+app.get('/', function(req, res, next) {
+  console.log(req.params.id)
+})
+
 //function encryptionPassword(req, response, next){
   //var key = pbkdf2.pbkdf2Sync(
     //req.body.password, salt, 36000, 256, 'sha256'

@@ -1,29 +1,40 @@
 h1 {
-    color: #132238;
-    text-shadow: 2px 2px #FF0000;
+    color: #09ff00;
+    text-shadow: 2px 2px rgb(221, 255, 0);
     text-align: cener;
+    padding-top:20px;
 }
 
 
 h3 {
-    color: #f66e00;
-    text-shadow: 2px 2px #132238;
+    color: #ff00aa;
+    text-shadow: 2px 2px rgb(113, 113, 235);
 }
 
 p {
-    color: #105f6a;
+    color: #24b3c6;
 }
 
 
 #inner {
-    background-color: #5ca4ca;
+    background-color: #323435;
     margin: 50px auto 50px auto;
+    width: 60%;
+    height: 200px;
+    box-shadow: 12px 12px 2px 1px rgba(31, 31, 63, 0.2);
 }
 
 #form-font {
     color: white;
     display: inline-block;
+    text-align: left;
+    padding: 25px;
+}
+
+#middle {
+    background-color: #52585b;
+    width: 40%;
+    display: inline-block;
     text-align: center;
-    padding: auto;
-    margin:auto;
+    box-shadow: 12px 12px 2px 1px rgba(31, 31, 63, 0.2);
 }
