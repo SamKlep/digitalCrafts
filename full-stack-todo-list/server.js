@@ -64,7 +64,7 @@ app.post("/api/todos", function (request, response, next) {
 
   let todoItem = request.body;
   /*
-  todoIteem = {
+  todoItem = {
     key1: value1,
     key2: value2,
     key3: value3,
@@ -101,17 +101,9 @@ app.put("/api/todos/:id", function (request, response, next) {
   response.json(todoItem);
 });
 
-// DELETE /api/todos/:id
-app.delete("/api/todos/:id", function (request, response, next) {
-  let indexToRemove = todoList.findIndex(function (todoItem) {
-    return todoItem.id.toString() === request.params.id;
-  });
-
-  if (indexToRemove >= 0) {
-    todoList.splice(indexToRemove, 1);
-  }
-
-  response.sendStatus(200);
+// DELETE /todo/:id
+app.delete('/todo/:id', (req, res) => {
+  return res.send('Received a DELETE HTTP method');
 });
 
 app.listen(3007, function () {
