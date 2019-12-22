@@ -1,7 +1,29 @@
-* {
-    text-align: center;
+h1 {
+    color: #132238;
+    text-shadow: 2px 2px #FF0000;
+    text-align: cener;
 }
 
-.basic {
+
+h3 {
+    color: #f66e00;
+    text-shadow: 2px 2px #132238;
+}
+
+p {
+    color: #105f6a;
+}
+
+
+#inner {
+    background-color: #5ca4ca;
+    margin: 50px auto 50px auto;
+}
+
+#form-font {
+    color: white;
+    display: inline-block;
     text-align: center;
+    padding: auto;
+    margin:auto;
 }
